@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/flashcard_question"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Who is the 44th President of the United States?"
+        android:textSize="40sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/card_background"
+        />
+
+
+    <TextView
+        android:id="@+id/flashcard_answer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Barack Obama"
+        android:visibility="invisible"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:background="@drawable/card_backgroundsecond"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/flashcard_answertwo"
+        android:layout_below="@id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Abraham Lincoln"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:background="@drawable/card_backgroundtwo"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/flashcard_answerthree"
+        android:layout_below="@id/flashcard_answertwo"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Andrew Jackson"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:background="@drawable/card_backgroundtwo"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/flashcard_answerfour"
+        android:layout_below="@id/flashcard_answerthree"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Barack Obama"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:background="@drawable/card_backgroundtwo"
+        android:textColor="@color/black"/>
+    <ImageView
+        android:id="@+id/add_question_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+    <ImageView
+        android:id="@+id/next_button"
+        android:layout_below="@id/flashcard_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_next"
+        android:layout_alignParentRight="true" />
+    <ImageView
+        android:id="@+id/delete_Btn"
+        android:layout_below="@id/flashcard_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_delete"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
