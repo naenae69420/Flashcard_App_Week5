@@ -7,7 +7,7 @@ An app that lets you save the messages you input and click "next" on, acting lik
 
 ### App Walk-though
 
-<img src="http://g.recordit.co/FEXE3HC4C8.gif" width=200><br>
+<img src="http://g.recordit.co/nI2RPMrKhy.gif" width=200><br>
 
 ## Required
 - [X] User can create a card and still see their created card when the app is relaunched.
